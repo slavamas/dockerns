@@ -2,6 +2,16 @@
 #@slavamas@gmail.com
 #enter namespaces with this only script knowing only container name
 
+function usage()
+{
+        echo "Usage: $0 <container-ID>"
+}
+if [ $# -lt 1 ]
+then
+        usage
+        exit
+fi
+
 #container name
 cn=${1}
 
